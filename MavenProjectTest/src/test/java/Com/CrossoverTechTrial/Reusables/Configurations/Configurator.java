@@ -63,11 +63,11 @@ public static WebDriver driver;
 		driver.get(property.getProperty("url"));
 		Reporter.log("Url Entered");
 		
-		Thread.sleep(4000);
+		Thread.sleep(8000);
 		CrossoverTechTrialLoginPage.EnterEmailid(driver);
 		Reporter.log("Email entered");
 		
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		CrossoverTechTrialLoginPage.EnterPassword(driver);
 		Reporter.log("Password entered");
 		
