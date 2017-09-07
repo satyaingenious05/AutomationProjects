@@ -51,7 +51,8 @@ public static WebDriver driver;
             driver.manage().window().maximize();
             driver.manage().deleteAllCookies();
         }
-        else{
+        else
+        {
  
             throw new Exception("Browser is not support and not correct");
         }
