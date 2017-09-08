@@ -14,11 +14,11 @@ public class CrossoverTechTrialLoginPage {
 	
 	public static CrossoverTechTrialLoginPage  EnterEmailid(WebDriver driver) throws InterruptedException{
 		
-		Thread.sleep(6000);
+		Thread.sleep(10000);
 		WebElement Emailid = driver.findElement(By.xpath(Emailid_xpath));
 		if(Emailid.isDisplayed() || Emailid.isEnabled()){
 			Emailid.clear();
-			Thread.sleep(8000);
+			Thread.sleep(10000);
 			Emailid.sendKeys("admin@test.com");
 			
 		}
