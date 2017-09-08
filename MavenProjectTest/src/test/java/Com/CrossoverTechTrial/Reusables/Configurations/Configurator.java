@@ -25,7 +25,7 @@ public static WebDriver driver;
     
    // We Can choose the below browsers as optional firefox/chrome/ie in setup method.
     
-    public void setup(@Optional("chrome")String browser) throws Exception{
+    public void setup(@Optional("ie")String browser) throws Exception{
         if(browser.equalsIgnoreCase("firefox")){ 
         	
         	System.setProperty("webdriver.gecko.driver","src\\test\\java\\Com\\CrossoverTechTrial\\Reusables\\Supporters\\Utilities\\geckodriver.exe");
