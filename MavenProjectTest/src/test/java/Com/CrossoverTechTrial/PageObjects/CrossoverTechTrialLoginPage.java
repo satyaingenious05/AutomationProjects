@@ -7,14 +7,14 @@ import org.openqa.selenium.WebElement;
 public class CrossoverTechTrialLoginPage {
 	
 	
-	static String Emailid_xpath = ".//input[@class='email ember-view gh-input']";
+	static String Emailid_xpath = ".//*[@class='email ember-view gh-input']";
 	static String Password_xpath = ".//*[@class ='password ember-view gh-input']";
 	static String SignIn_xpath = ".//*[@class ='login btn btn-blue btn-block ember-view']";
 	
 	
 	public static CrossoverTechTrialLoginPage  EnterEmailid(WebDriver driver) throws InterruptedException{
 		
-		Thread.sleep(8000);
+		Thread.sleep(6000);
 		WebElement Emailid = driver.findElement(By.xpath(Emailid_xpath));
 		if(Emailid.isDisplayed() || Emailid.isEnabled()){
 			Emailid.clear();
