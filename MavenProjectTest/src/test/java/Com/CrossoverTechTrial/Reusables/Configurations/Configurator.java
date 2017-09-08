@@ -46,7 +46,7 @@ public static WebDriver driver;
        else if(browser.equalsIgnoreCase("ie")){
     	  
             System.setProperty("webdriver.ie.driver","src\\test\\java\\Com\\CrossoverTechTrial\\Reusables\\Supporters\\Utilities\\IEDriverServer.exe");
-           
+            
             driver = new InternetExplorerDriver();
             driver.manage().window().maximize();
             driver.manage().deleteAllCookies();
@@ -60,6 +60,7 @@ public static WebDriver driver;
         
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         
+        Thread.sleep(2000);
         Property property = new Property(CrossoverTechTrialConstants.configFile);
 		driver.get(property.getProperty("url"));
 		Reporter.log("Url Entered");
