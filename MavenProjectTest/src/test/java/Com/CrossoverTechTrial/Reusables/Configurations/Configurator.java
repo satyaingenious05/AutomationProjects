@@ -60,12 +60,12 @@ public static WebDriver driver;
         
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         Property property = new Property(CrossoverTechTrialConstants.configFile);
 		driver.get(property.getProperty("url"));
 		Reporter.log("Url Entered");
 		
-		Thread.sleep(6000);
+		Thread.sleep(10000);
 		CrossoverTechTrialLoginPage.EnterEmailid(driver);
 		Reporter.log("Email entered");
 		
